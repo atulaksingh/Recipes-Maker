@@ -1,0 +1,38 @@
+.row{
+  background-color: #eff4ee;
+}
+
+
+
+.page-footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand {
+  color: blueviolet;
+}
+
+.link {
+  background-color: blueviolet;
+  border-radius: 0.5rem;
+  color: white;
+
+  display: block;
+  max-width: 170px;
+  padding: 0.6rem 1.2rem;
+  margin: 0px auto;
+  overflow: hidden;
+  text-decoration: none;
+}
+.nav-item a {
+  font-weight: bold;
+}
+
+

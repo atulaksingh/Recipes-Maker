@@ -1,0 +1,73 @@
+h1{
+  color: red;
+}
+i{
+  color: brown;
+  /* height: 100px;
+  width: 100px; */
+  size: 50px;
+}
+.recipe-icons svg {
+  font-size: 1.5rem;
+}
+.recipe-icons {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 1rem;
+  margin: 2rem 0;
+  text-align: center;
+  margin-top: 6rem;
+  margin-left: 6rem;
+}
+p {
+  margin: 0 0 1rem;
+  max-width: 40em;
+}
+
+
+h4 {
+    font-size: 1.563rem;
+}
+.brand{
+  color: blueviolet;
+  
+}
+.mainclass{
+  background-color: #eff4ee;
+}
+.recipe_name{
+  margin-top: 3rem;
+}
+
+.page-footer {
+  text-align: center;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.brand {
+  color: blueviolet;
+}
+
+.link {
+  background-color: blueviolet;
+  border-radius: 0.5rem;
+  color: white;
+
+  display: block;
+  max-width: 170px;
+  padding: 0.6rem 1.2rem;
+  margin: 0px auto;
+  overflow: hidden;
+  text-decoration: none;
+}
+.nav-item a {
+  font-weight: bold;
+}
+.profileimg-text {
+  border: radius 2rem ;
+}
+h4,h3,h5,h1{
+  color: blueviolet;
+}

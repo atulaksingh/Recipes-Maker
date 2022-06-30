@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>home page</title>
+
+  <link href="css/home_page.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+    integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <%- include('./partials/navbar'); %>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        
+          <!-- *********************************************** -->
+          <div class="mt-5">
+            <section class="">
+              <div class="row">
+                <div class="col-md-6">
+                  <article>
+                    <h2 class="fw-bold">
+                      <span class="brand fw-bold">I'm baby coloring</span> book
+                      poke taxidermy
+                    </h2>
+                    <p class="fw-normal font-monospace">
+                      Taxidermy forage glossier letterpress heirloom before they
+                      sold out you probably haven't heard of them banh mi
+                      biodiesel chia.
+                    </p>
+                    <p class="fw-normal font-monospace">
+                      Taiyaki tumblr flexitarian jean shorts brunch, aesthetic
+                      salvia retro.
+                    </p>
+                    <!-- <a class="btn" href="/contact">contact</a> -->
+                  </article>
+                </div>
+                <div class="col-md-6 model-1 ">
+                  <img style="border:none ;" src="/img/undraw_cooking_lyxy.svg" />
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <section class="featured-recipe mt-5">
+            <h5 class="mb-2">Look at this Awesomesouce!</h5>
+            <br />
+            <div class="mt-2">
+
+              <a class="link mb-5 color-light" href="/Add_new_recipe">Add New Recipes</a>
+
+            </div>
+            <div class="row">
+
+
+
+              <% recipelist && recipelist.forEach(item=>{ %>
+                <div class="col-sm-4">
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">
+                        <img class="cakeimg" src="<%=item.recipe_profile%>" />
+                      </h5>
+                      <h5 class="card-title">
+                        <%=item.recipe_name%>
+                      </h5>
+                      <p>
+                        Prep :<%=item.prep_time%> |Cook : <%=item.total_time%>
+                      </p>
+                      <a href="/recipe/<%=item._id%> " class="link">
+                        <%=item.recipe_name%>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <% }); %>
+            </div>
+          </section>
+          
+      </div>
+    </div>
+  </div>
+
+  <%- include('./partials/footer'); %>
+</body>
+<script></script>
+
+</html>
